@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    color: tomato;
+    font-size: 80px;
+}
+
+.counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    background-color: tomato;
+    border-radius: 40px;
+}
+
+button:hover {
+    transform: scale(110%);
+    cursor: pointer;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+}
