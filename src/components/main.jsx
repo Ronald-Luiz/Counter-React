@@ -8,6 +8,8 @@ function main() {
 
 
     const mais = () => {
+        clearInterval(intervalId);
+        setIntervalId(null);
 
         if (intervalId === null) {
             const id = setInterval(() => {
@@ -18,6 +20,8 @@ function main() {
     }
 
     const menos = () => {
+        clearInterval(intervalId);
+        setIntervalId(null);
 
         const id = setInterval(() => {
             setNum((num) => num - 1);
@@ -28,6 +32,7 @@ function main() {
 
 
     const stop = () => {
+        setNum(0);
         clearInterval(intervalId);
         setIntervalId(null);
     }
@@ -49,7 +54,7 @@ function main() {
                     <h2>{num}</h2>
                     <div className="btn">
                         <button onClick={mais}>+</button>
-                        <button onClick={stop}>stop</button>
+                        <button onClick={stop}>clear</button>
                         <button onClick={menos}>-</button>
                     </div>
                 </div>
